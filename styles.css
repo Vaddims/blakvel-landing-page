@@ -5,7 +5,7 @@
 */
 @font-face {
 	font-family: Logo;
-	src: url('/Assets/Fonts/LEIXO.ttf') format('trueType');
+	src: url('./Assets/Fonts/LEIXO.ttf') format('trueType');
 }
 
 :root {
@@ -373,7 +373,7 @@ select {
 		-ms-appearance: none;
     -o-appearance: none;
     appearance: none;
-    background-image: url('/Assets/UIMultiMedia/down-arrow.png');
+    background-image: url('./Assets/Misc/down-arrow.png');
     background-position: 96% 50%;
     background-repeat: no-repeat;
     outline: none;
@@ -768,13 +768,12 @@ input[type='checkbox'] {
 	width: 1.625rem;
 	height: 1.625rem;
 	position: absolute;
-	background: url('/Assets/UIMultiMedia/hexagon-ui.svg') center center no-repeat;
+	background: url('./Assets/Misc/hexagon-ui.svg') center center no-repeat;
 	background-size: 1.625rem 1.625rem;
-	transition: all 0.2s ease;
 }
 
 .navbar-custom .fa-stack:hover .hexagon {
-	background: url('/Assets/UIMultiMedia/hexagon-white.svg') center center no-repeat;
+	background: url('./Assets/Misc/hexagon-white.svg') center center no-repeat;
 	background-size: 1.625rem 1.625rem;
 }
 
@@ -918,7 +917,6 @@ input[type='checkbox'] {
 
 #themeColorToggler {
 	cursor: pointer;
-	margin-left: 10px;
 }
 
 #toggleLanguage {
@@ -927,12 +925,12 @@ input[type='checkbox'] {
 }
 
 #toggleLanguage.en {
-	background: url('/Assets/SVG/greece.svg') center center no-repeat;
+	background: url('./Assets/SVG/greece.svg') center center no-repeat;
 	background-size: 24px;
 }
 
 #toggleLanguage.gr {
-	background: url('/Assets/SVG/united-kingdom.svg') center center no-repeat;
+	background: url('./Assets/SVG/united-kingdom.svg') center center no-repeat;
 	background-size: 24px;
 }
 
@@ -940,13 +938,16 @@ input[type='checkbox'] {
 /*    04. Header     */
 /*********************/
 .header {
-	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('/Assets/Images/HeaderImage.jpg') left bottom no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('./Assets/Images/HeaderImage.jpg') left bottom no-repeat;
 	background-size: cover;
 }
 
 .header .header-content {
-	padding-top: 8rem;
-	padding-bottom: 2.125rem;
+	min-height: 60vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 	text-align: center;
 }
 
@@ -1027,22 +1028,22 @@ input[type='checkbox'] {
 }
 
 .basic-1 .image-container.en {
-	background: url('/Assets/Images/EN_header.png') center center no-repeat;
+	background: url('./Assets/Images/EN_header.png') center center no-repeat;
 	background-size: auto 100%;
 }
 
 .basic-1.darkTheme .image-container.en {
-	background: url('/Assets/Images/EN_header_rev.png') center center no-repeat;
+	background: url('./Assets/Images/EN_header_rev.png') center center no-repeat;
 	background-size: auto 100%;
 }
 
 .basic-1 .image-container.gr {
-	background: url('/Assets/Images/GR_header.png') center center no-repeat;
+	background: url('./Assets/Images/GR_header.png') center center no-repeat;
 	background-size: auto 100%;
 }
 
 .basic-1.darkTheme .image-container.gr {
-	background: url('/Assets/Images/GR_header_rev.png') center center no-repeat;
+	background: url('./Assets/Images/GR_header_rev.png') center center no-repeat;
 	background-size: auto 100%;
 }
 
@@ -1052,7 +1053,7 @@ input[type='checkbox'] {
 	border-radius: 0.25rem;
 	transition: all 0.3s;
 	transform: scale(1.2);
-	background: url('/Assets/UIMultiMedia/hexagon-ui.svg') center center no-repeat;;
+	background: url('./Assets/Misc/hexagon-ui.svg') center center no-repeat;;
 	background-color: green;
 }
 
@@ -1113,7 +1114,7 @@ input[type='checkbox'] {
 	position: absolute;
 	width: 6rem;
 	height: 6rem;
-	background: url('/Assets/UIMultiMedia/hexagon-ui.svg') center center no-repeat;
+	background: url('./Assets/Misc/hexagon-ui.svg') center center no-repeat;
 	background-size: 6rem 6rem;
 }
 
@@ -1233,7 +1234,7 @@ input[type='checkbox'] {
 
 .accordion .area-1 {
 	height: 27rem;
-	background: url('/Assets/Images/TempIntroImage2.jpg') center center no-repeat;
+	background: url('./Assets/Images/TempIntroImage2.jpg') center center no-repeat;
 	background-size: cover;
 }
 
@@ -1462,7 +1463,7 @@ input[type='checkbox'] {
 
 .tabs .area-2 {
 	height: 70vw;
-	background: url('/Assets/Images/Logo/blakvel_logo.png') center center no-repeat;
+	background: url('./Assets/Images/Logo/blakvel_logo.png') center center no-repeat;
 	background-color: var(--LightThemeColor);
 	background-size: auto 80%;
 	transition: background-color .5s ease;
@@ -1470,7 +1471,7 @@ input[type='checkbox'] {
 
 .tabs.darkTheme .area-2 {
 	height: 70vw;
-	background: url('/Assets/SVG/Logo/blakvel_logo.svg') center center no-repeat;
+	background: url('./Assets/SVG/Logo/blakvel_logo.svg') center center no-repeat;
 	background-color: var(--DarkThemeColor);
 	background-size: auto 80%;
 }
@@ -1945,13 +1946,13 @@ input[type='checkbox'] {
 	left: 0;
 	width: 1.75rem;
 	height: 1.75rem;
-	background: url('/Assets/UIMultiMedia/hexagon-ui.svg') center center no-repeat;
+	background: url('./Assets/Misc/hexagon-ui.svg') center center no-repeat;
 	background-size: 1.75rem 1.75rem;
 	transition: all 0.2s ease;
 }
 
 .basic-2 .fa-stack:hover .hexagon {
-	background: url('/Assets/UIMultiMedia/hexagon-white.svg') center center no-repeat;
+	background: url('./Assets/Misc/hexagon-white.svg') center center no-repeat;
 	background-size: 1.75rem 1.75rem;
 }
 
@@ -2122,13 +2123,13 @@ input[type='checkbox'] {
 	position: absolute;
 	width: 3.25rem;
 	height: 3.25rem;
-	background: url('/Assets/UIMultiMedia/hexagon-ui.svg') center center no-repeat;
+	background: url('./Assets/Misc/hexagon-ui.svg') center center no-repeat;
 	background-size: 3.25rem 3.25rem;
 	transition: all 0.2s ease;
 }
 
 .form-2 .fa-stack:hover .hexagon {
-	background: url('/Assets/UIMultiMedia/hexagon-white.svg') center center no-repeat;
+	background: url('./Assets/Misc/hexagon-white.svg') center center no-repeat;
 	background-size: 3.25rem 3.25rem;
 }
 
@@ -2198,7 +2199,7 @@ a.back-to-top {
 	height: 2.625rem;
 	border-radius: 1.875rem;
 	border: 1px solid white;
-	background: var(--UILightThemeColor) url("/Assets/UIMultiMedia/up-arrow.png") no-repeat center 47%;
+	background: var(--UILightThemeColor) url("./Assets/Misc/up-arrow.png") no-repeat center 47%;
 	background-size: 1.125rem 1.125rem;
 	text-indent: -9999px;
 	transition: background-color .5s ease;
@@ -2367,8 +2368,6 @@ a:hover.back-to-top {
 	/* Header */
 	.header .header-content {
 		height: 100vh;
-		padding-top: 13rem;
-		padding-bottom: 7.5rem;
 	}
 
 	.header h1 {
@@ -2491,11 +2490,6 @@ a:hover.back-to-top {
 
 
 	/* Header */
-	.header .header-content {
-		padding-top: 14rem;
-		padding-bottom: 15rem;
-	}
-
 	.header .text-container {
 		margin-top: 3rem;
 	}
@@ -2634,7 +2628,7 @@ a:hover.back-to-top {
 
 	/* .tabs .area-2 {
 		height: 70vw;
-		background: url('/Assets/Images/Logo/blakvel_logo.png') center center no-repeat;
+		background: url('./Assets/Images/Logo/blakvel_logo.png') center center no-repeat;
 		background-color: var(--LightThemeColor);
 		background-size: auto 80%;
 		transition: background-color .5s ease;
@@ -2642,13 +2636,13 @@ a:hover.back-to-top {
 	
 	.tabs.darkTheme .area-2 {
 		height: 70vw;
-		background: url('/Assets/SVG/Logo/blakvel_logo.svg') center center no-repeat;
+		background: url('./Assets/SVG/Logo/blakvel_logo.svg') center center no-repeat;
 		background-color: var(--DarkThemeColor);
 		background-size: auto 80%;
 	} */
 
 	.tabs .area-2 {
-		background: url('/Assets/Images/Logo/blakvel_logo.png') 50px 100px no-repeat;
+		background: url('./Assets/Images/Logo/blakvel_logo.png') 50px 100px no-repeat;
 		background-color: var(--LightThemeColor);
 		width: 50%;
 		height: 500px;
@@ -2657,7 +2651,7 @@ a:hover.back-to-top {
 	}
 
 	.tabs.darkTheme .area-2 {
-		background: url('/Assets/SVG/Logo/blakvel_logo.svg') 50px 100px no-repeat;
+		background: url('./Assets/SVG/Logo/blakvel_logo.svg') 50px 100px no-repeat;
 		background-color: var(--DarkThemeColor);
 		height: 500px;
 		background-size: 400px;
@@ -2767,14 +2761,6 @@ a:hover.back-to-top {
 		padding-left: 5rem;
 	}
 	/* end of navigation */
-
-	
-	/* Header */
-	.header .header-content {
-		padding-top: 15rem;
-		padding-bottom: 17.5rem;
-	}
-	/* end of header */
 
 
 	/* Intro */

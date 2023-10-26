@@ -1,73 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="gr">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Just Blakvel">
-    <meta name="author" content="Blakvel Corp.">
-
-    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
-	<meta property="og:site_name" content="Blakvel" /> <!-- website name -->
-	<meta property="og:site" content="www.blakvel.com" /> <!-- website link -->
-	<meta property="og:title" content="Blakvel Info Site"/> <!-- title shown in the actual shared post -->
-	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
-	<meta property="og:image" content="../Assets/Images/Logo/blakvel_emblem.jpg" /> <!-- image link, make sure it's jpg -->
-	<meta property="og:url" content="www.blakvel.com" /> <!-- where do you want your post to link to -->
+    <meta name="description" content="Το πρώτο ηλεκτρονικό κατάστημα ειδών ένδυσης στην Κύπρο.">
+    <meta name="author" content="Blakvel">
+	<meta property="og:site_name" content="Blakvel" /> 
+	<meta property="og:site" content="www.blakvel.com" /> 
+	<meta property="og:title" content="Blakvel"/> 
+	<meta property="og:description" content="Το πρώτο ηλεκτρονικό κατάστημα ειδών ένδυσης στην Κύπρο." /> 
+	<meta property="og:image" content=./Assets/Images/Logo/blakvel_emblem.jpg" /> 
+	<meta property="og:url" content="www.blakvel.com" /> 
 	<meta property="og:type" content="article" />
-
-    <!-- Website Title -->
     <title>Blakvel - Αρχική Σελίδα</title>
-    
-    <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext" rel="stylesheet">
-    <link href="../PrebuildFiles/Css/bootstrap.css" rel="stylesheet">
-    <link href="../PrebuildFiles/Css/fontawesome-all.css" rel="stylesheet">
-    <link href="../PrebuildFiles/Css/swiper.css" rel="stylesheet">
-	<link href="../PrebuildFiles/Css/magnific-popup.css" rel="stylesheet">
-	<link href="../Css/styles.css" rel="stylesheet">
-	
-	<!-- Favicon  -->
-    <link rel="icon" href="../Assets/SVG/Logo/blakvel_emblem.svg">
+    <link href="vendors/styles/bootstrap.css" rel="stylesheet">
+    <link href="vendors/styles/fontawesome-all.css" rel="stylesheet">
+    <link href="vendors/styles/swiper.css" rel="stylesheet">
+	<link href="vendors/styles/magnific-popup.css" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet">
+    <link rel="icon" href=./Assets/SVG/Logo/blakvel_emblem.svg">
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
-    
-    <!-- Load hidden Images -->
     <div style="display: none;">
-        <!-- <img loading="lazy" id='SnowflakeImage' src="../Assets/Images/Season/Winter/Snowflake.png" width="100" height="100"> -->
     </div>
-
-    <!-- Preloader -->
 	<div class="spinner-wrapper">
-        <img src="../Assets/SVG/Logo/blakvel_emblem.svg" alt="alternative">
-        <div></div>
-        <!-- <div class="spinner">
-            <div class="bounce1"></div>
-            <div class="bounce2"></div>
-            <div class="bounce3"></div>
-        </div> -->
+        <img src="./Assets/SVG/Logo/blakvel_emblem.svg" alt="alternative">
     </div>
-    <!-- end of preloader -->
-    
-
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
-        <!-- Text Logo - Use this if you don't have a graphic logo -->
-        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
-
-        <!-- Image Logo -->
-        <!-- <a class="navbar-brand logo-image" href="index.html"><img loading="lazy" src="images/logo.svg" alt="alternative"></a> -->
-        <a class="navbar-brand logo-image"><img src="../Assets/SVG/Logo/blakvel_emblem.svg" alt="alternative"></a>
-        
-        <!-- Mobile Menu Toggle Button -->
+        <a class="navbar-brand logo-image"><img src="./Assets/SVG/Logo/blakvel_emblem.svg" alt="alternative"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-awesome fas fa-bars"></span>
             <span class="navbar-toggler-awesome fas fa-times"></span>
         </button>
-        <!-- end of mobile menu toggle button -->
-
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
@@ -90,15 +56,11 @@
                 <span class="hexagon"></span>
                 <i class="fas fa-adjust fa-stack-1x"></i>
             </span>
-            <a href="../index.html"><span id='toggleLanguage' class="fa-stack gr" title="Language: Greek">
+            <a href="./index.html"><span id='toggleLanguage' class="fa-stack gr" title="Language: Greek">
                 <div class="languageIcon"></div>
             </span></a>
         </div>
-    </nav> <!-- end of navbar -->
-    <!-- end of navbar -->
-
-
-    <!-- Header -->
+    </nav> 
     <header id="header" class="header">
         <canvas></canvas>
         <div class="header-content">
@@ -106,21 +68,14 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="text-container">
-                            <!-- <h1>WE PROVIDE <span id="js-rotating">TEXT FIELD, TEXT FIELD 2, TEXT FIELD 3</span></h1> -->
-                            <!-- <img loading="lazy" style="width: 300px; margin-bottom: 10px" src="../Assets/Images/Season/Winter/CompanyTitle.png" alt=""> -->
                             <h1>BLAKVEL</h1>
                             <p class="p-heading p-large">Καλωσορίσατε στο πρώτο διαδικτυακό κατάστημα μεταχειρισμενων ρούχων στην Κύπρο.</p>
-                            <!-- <a class="btn-solid-lg page-scroll" href="">GO TO STORE</a> -->
                         </div>
-                    </div> <!-- end of col -->
-                </div> <!-- end of row -->
-            </div> <!-- end of container -->
-        </div> <!-- end of header-content -->
-    </header> <!-- end of header -->
-    <!-- end of header -->
-
-
-    <!-- Intro -->
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </header> 
     <div id="intro" class="basic-1">
         <div class="container">
             <div class="row">
@@ -131,23 +86,18 @@
                         <p>Είμαστε η Blakvel,<br>Μια εταιρία υψηλά διαπρεπών μαθητών του Λυκείου Λατσιών, που λαμβάνουν μέρος στον διαγωνισμό επιχειρηματικότητας Junior Achievement.</p>
                         <p class="testimonial-text">"Από την αρχή, στόχος μας ήταν να δημιουργήσουμε κάτι όχι μόνο μοναδικό και πωλήσιμο, αλλά και κάτι που θα αποτελέσει εργαλείο για την Κυπριακή κοινωνία. Προτεραιότητά μας είναι η κοινωνική προσφορά."</p>
                         <div class="testimonial-author">Στέλιος Χαραλαμπίδης - CEO</div>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
+                    </div> 
+                </div> 
                 <div class="col-lg-7">
                     <div class="image-container en">
-                        <!-- <img loading="lazy" src="../Assets/SVG/Logo/blakvel_logo.svg" alt="alternative"> -->
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-1 -->
-    <!-- end of intro -->
-
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </div> 
     <div class="tabs">
         <div id='area1' class="area-1">
             <div class="tabs-container">
-                
-                <!-- Tabs Links -->
                 <ul class="nav nav-tabs" id="ariaTabs" role="tablist">
                     <!-- <li class="nav-item">
                         <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true"><i class="fas fa-th"></i> Business</a>
@@ -159,12 +109,7 @@
                         <a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false"><i class="fas fa-th"></i> Διαδικασία Δημιουργίας</a>
                     </li>
                 </ul>
-                <!-- end of tabs links -->
-                
-                <!-- Tabs Content -->
                 <div class="tab-content" id="ariaTabsContent">
-      
-                    <!-- Tab -->
                     <div class="tab-pane fade show active" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
                       <ul class="list-unstyled li-space-lg first">
                           <li class="media">
@@ -184,12 +129,8 @@
                               <div class="media-body">Στο λογότυπο περιλαμβάνεται επίσης η χρονιά ίδρυσής μας, “EST. 2020”, και η φύση της υπηρεσίας μας, “ONLINE STORE”. Όλες οι λέξεις είναι τοποθετημένες με τρόπο καλλιτεχνικό και είναι σχεδιασμένες ώστε να δημιουργούν μια εικόνα αρεστή στην όψη.</div>
                           </li>
                       </ul>
-                  </div> <!-- end of tab-pane -->
-                  <!-- end of tab -->
-      
-                    <!-- Tab -->
+                  </div> 
                     <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
-                        <!-- <p>Our goal was to achieve an elegant and professional design, which remains inclusive and appealing to all genders and identities <a href="https://www.linkedin.com/in/andreaschristofi">Andreas Christofi</a>, Creative Director at Infocredit Group Ltd, we proudly and surely decided on this design, which is featured on our social media and in our website.</p> -->
                         <ul class="list-unstyled li-space-lg">
                             <li class="media">
                                 <i class="fas fa-square"></i>
@@ -200,26 +141,17 @@
                                 <div class="media-body">Μετά από εκτενή συζήτηση και ανταλλαγή ιδεών με τον Graphic Designer <a href="https://www.linkedin.com/in/andreaschristofi">Αντρέα Χριστοφή</a>, Creative Director στην Infocredit Group Ltd, με σιγουριά και περηφάνια επιλέξαμε το συγκεκριμένο σχέδιο, το οποίο μπορείτε να βρείτε στα μέσα κοινωνικής δικτύωσης της εταιρείας μας και στην ιστοσελίδα μας.</div>
                             </li>
                         </ul>
-                    </div> <!-- end of tab-pane -->
-                    <!-- end of tab -->
-      
-                </div> <!-- end of tab-content -->
-                <!-- end of tabs content -->
-      
-            </div> <!-- end of tabs-container -->
-        </div><!-- end of area-1 on same line and no space between comments to eliminate margin white space --><div class="area-2"><div class="super"></div></div> <!-- end of area-2 -->
-      </div> <!-- end of tabs -->
-      <!-- end of details 2 -->
-          <!-- Details 2 -->
-
-    <!-- Description -->
+                    </div> 
+                </div> 
+            </div> 
+        </div>
+        <div class="area-2"><div class="super"></div></div> 
+    </div> 
     <div id='introExtra' class="cards-1">
         <h2 class='custom-title'>Οι Πιο Σημαντικές Πτυχές της Δουλειάς μας</h2>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    
-                    <!-- Card -->
                     <div class="card">
                         <span class="fa-stack">
                             <span class="hexagon"></span>
@@ -230,9 +162,6 @@
                             <p> Για να προσφέρεις τις καλύτερες υπηρεσίες, πρέπει να ξέρεις της ανάγκες των πελατών σου.</p>
                         </div>
                     </div>
-                    <!-- end of card -->
-
-                    <!-- Card -->
                     <div class="card">
                         <span class="fa-stack">
                             <span class="hexagon"></span>
@@ -243,9 +172,6 @@
                             <p>Όταν η ζήτηση της αγοράς είναι ξεκάθαρη, πρέπει να θέτονται καθήκοντα για να εφαρμόζεται το πλάνο. Για να αναπτύξουμε με επιτυχία την υπηρεσία μας, αφιερώνουμε χρόνο για να οργανωθούμε και να προσχεδιάσουμε περεταίρω διαδικασίες.</p>
                         </div>
                     </div>
-                    <!-- end of card -->
-
-                    <!-- Card -->
                     <div class="card">
                         <span class="fa-stack">
                             <span class="hexagon"></span>
@@ -256,20 +182,13 @@
                             <p>Αφού έχει πλέον ξεκινήσει η διαδικασία ανάπτυξης, το μόνο εκκρεμές θέμα είναι η εκτέλεση της υπηρεσίας μας. Για την ολοκλήρωση των καθηκόντων προσπαθούμε να πληρούμε τις προθεσμίες, να εξασφαλίζουμε την ποιότητα και πάνω από όλα, να ξεπερνάμε την κάθε προσδοκία.</p>
                         </div>
                     </div>
-                    <!-- end of card -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of cards-1 -->
-    <!-- end of description -->
-
-    <!-- Details 1 -->
+                </div> 
+            </div> 
+        </div> 
+    </div> 
 	<div id="details" class="accordion">
 		<div class="area-1">
-		</div><!-- end of area-1 on same line and no space between comments to eliminate margin white space --><div id="area2" class="area-2">
-            
-            <!-- Accordion -->
+		</div><div id="area2" class="area-2">
             <div class="accordion-container" id="accordionOne">
                 <h2>Γιατί Την Βlakvel</h2>
                 <div class="item">
@@ -283,8 +202,7 @@
                             Αφού όλα τα προϊόντα μας είναι μεταχειρισμένα, η τιμή κάθε κομματιού θα είναι πολύ χαμηλότερη από την λιανική του. Αυτό έχει ως αποτέλεσμα καταλόγους από τους οποίους ο καθένας μπορεί να βρει κάτι εντός του προϋπολογισμού του. Αν βρείτε κάποιο κομμάτι αλλού, σε χαμηλότερη τιμή, μπορούμε να κάνουμε αντιστοίχιση κόστους!                        
                         </div>
                     </div>
-                </div> <!-- end of item -->
-            
+                </div> 
                 <div class="item">
                     <div id="headingTwo">
                         <span class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" role="button">
@@ -296,8 +214,7 @@
                             Γιατί να δώσεις τα άθικτα, αφόρετα ρούχα σου δωρεάν, όταν μπορείς να κερδίσεις από αυτά; Απλά κάνε δωρεάν εγγραφή, καταχώρισε τα στην ιστοσελίδα μας και εμείς θα εφαρμόσουμε την ποιοτική αξιολόγηση και επεξεργασία της Blakvel, και θα το καταχωρήσουμε στο κατάστημα, έτσι ώστε να πουληθεί και εσύ να πάρεις τα κέρδη σου!
                         </div>
                     </div>
-                </div> <!-- end of item -->
-            
+                </div> 
                 <div class="item">
                     <div id="headingThree">
                         <span class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" role="button">
@@ -309,231 +226,184 @@
                             Η Blakvel υποστηρίζει διαφόρους Κυπριακούς φιλανθρωπικούς οργανισμούς. Κατά την καταχώρηση ενός προϊόντος στην ιστοσελίδα μας έχεις την επιλογή να δωρίσεις όλα ή ένα ποσοστό από τα κέρδη σου σε έναν από τους μη κερδοσκοπικούς οργανισμούς με τους οποίους συνεργαζόμαστε. Για περισσότερες πληροφορίες για την φιλανθρωπική μας προσφορά πάτα <a class='page-scroll' href='#projects'>εδώ</a>.
                         </div>
                     </div>
-                </div> <!-- end of item -->
-            </div> <!-- end of accordion-container -->
-            <!-- end of accordion -->
-
-
-
-
-            
-		</div> <!-- end of area-2 -->
-    </div> <!-- end of accordion -->
-    <!-- end of details 1 -->
-    
-    
+                </div> 
+            </div> 
+		</div> 
+    </div> 
     <div id="projects" class="filter special">
 		<div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">ΦΙΛΑΝΘΡΩΠΙΚΟ ΕΡΓΟ</div>
                     <h2>Εγχειρήματα Για Τα Οποία Είμαστε Περήφανοι</h2>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
+                </div> 
+            </div> 
             <div class="row">
                 <div class="col-lg-12">
                     <div class="grid">
                         <div class="element-item managers employee special">
-                            <a class="popup-with-move-anim" href="#charity_Pasykaf"><div class="element-item-overlay"><span>ΠΑΣΥΚΑΦ</span></div><img loading="lazy" src="../Assets/Images/Charitys/pasykaf_3.png" alt="alternative"></a>
+                            <a class="popup-with-move-anim" href="#charity_Pasykaf"><div class="element-item-overlay"><span>ΠΑΣΥΚΑΦ</span></div><img loading="lazy" src="./Assets/Images/Charitys/pasykaf_3.png" alt="alternative"></a>
                         </div>
                         <div class="element-item managers employee special">
-                            <a class="popup-with-move-anim" href="#charity_Alkionides"><div class="element-item-overlay"><span>Σωματείο Αλκυονίδες</span></div><img loading="lazy" src="../Assets/Images/Charitys/alkionides.png" alt="alternative"></a>
+                            <a class="popup-with-move-anim" href="#charity_Alkionides"><div class="element-item-overlay"><span>Σωματείο Αλκυονίδες</span></div><img loading="lazy" src="./Assets/Images/Charitys/alkionides.png" alt="alternative"></a>
                         </div>
                         <div class="element-item managers employee special">
-                            <a class="popup-with-move-anim" href="#charity_AgaliaElpidas"><div class="element-item-overlay"><span>Αγκαλιά Ελπίδας</span></div><img loading="lazy" src="../Assets/Images/Charitys/Agkalia_Elpidas.png" alt="alternative"></a>
+                            <a class="popup-with-move-anim" href="#charity_AgaliaElpidas"><div class="element-item-overlay"><span>Αγκαλιά Ελπίδας</span></div><img loading="lazy" src="./Assets/Images/Charitys/Agkalia_Elpidas.png" alt="alternative"></a>
                         </div>
                         <div class="element-item managers employee special">
-                            <a class="popup-with-move-anim" href="#charity_ADD-ADHD"><div class="element-item-overlay"><span>ΔΕΠΥ Κύπρου</span></div><img loading="lazy" src="../Assets/Images/Charitys/adhd-cyprusContext.png" alt="alternative"></a>
+                            <a class="popup-with-move-anim" href="#charity_ADD-ADHD"><div class="element-item-overlay"><span>ΔΕΠΥ Κύπρου</span></div><img loading="lazy" src="./Assets/Images/Charitys/adhd-cyprusContext.png" alt="alternative"></a>
                         </div>
-                    </div> <!-- end of grid -->
-                    <!-- end of filter -->
-                    
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-
+                    </div> 
+                </div> 
+            </div> 
             <div class="mx-auto specialText">* Η Blakvel, στο πλαίσιο της κοινωνικής της ευθύνης, θα συμβάλει στην οικονομική υποστήριξη των παραπάνω φιλανθρωπικών οργανώσεων.</div>
-		</div> <!-- end of container -->
-    </div> <!-- end of filter -->
-
-    <!-- Projects -->
+		</div> 
+    </div> 
 	<div id="teamMembers" class="filter">
 		<div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">Η ΟΜΑΔΑ ΜΑΣ</div>
                     <h2>Γνωρίστε Μας</h2>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
+                </div> 
+            </div> 
             <div class="row">
                 <div class="col-lg-12">
-                    <!-- Filter -->
                     <div class="button-group filters-button-group">
                         <a class="button is-checked" data-filter="*"><span>ΟΛΟΙ</span></a>
                         <a class="button" data-filter=".managers"><span>ΔΙΕΥΘΥΝΤΕΣ</span></a>
                         <a class="button" data-filter=".employee"><span>ΥΠΑΛΛΗΛΟΙ</span></a>
-                    </div> <!-- end of button group -->
+                    </div> 
                     <div class="grid">
                         <div class="element-item managers">
-                            <a class="popup-with-move-anim"><div class="element-item-overlay"><span>CEO<br> - <br>Χαραλαμπίδης Στέλιος</span></div><img loading="lazy" src="../Assets/Images/BlakvelTeam/019.jpg" alt="alternative"></a>
+                            <a class="popup-with-move-anim"><div class="element-item-overlay"><span>CEO<br> - <br>Χαραλαμπίδης Στέλιος</span></div><img loading="lazy" src="./Assets/Images/BlakvelTeam/019.jpg" alt="alternative"></a>
                         </div>
                         <div class="element-item managers">
-                            <a class="popup-with-move-anim"><div class="element-item-overlay"><span>HR&CPO<br> - <br>Χριστοδούλου Θεοδώρα</span></div><img loading="lazy" src="../Assets/Images/BlakvelTeam/014.jpg" alt="alternative"></a>
+                            <a class="popup-with-move-anim"><div class="element-item-overlay"><span>HR&CPO<br> - <br>Χριστοδούλου Θεοδώρα</span></div><img loading="lazy" src="./Assets/Images/BlakvelTeam/014.jpg" alt="alternative"></a>
                         </div>
                         <div class="element-item managers">
-                            <a class="popup-with-move-anim"><div class="element-item-overlay"><span>IT<br> - <br>Εφραίμοβ Βαντίμ</span></div><img loading="lazy" src="../Assets/Images/BlakvelTeam/016.jpg" alt="alternative"></a>
+                            <a class="popup-with-move-anim"><div class="element-item-overlay"><span>IT<br> - <br>Εφραίμοβ Βαντίμ</span></div><img loading="lazy" src="./Assets/Images/BlakvelTeam/016.jpg" alt="alternative"></a>
                         </div>
                         <div class="element-item managers">
-                            <a class="popup-with-move-anim" ><div class="element-item-overlay"><span>CMO<br> - <br>Δημητρίου Κρίστια</span></div><img loading="lazy" src="../Assets/Images/BlakvelTeam/053.jpg" alt="alternative"></a>
+                            <a class="popup-with-move-anim" ><div class="element-item-overlay"><span>CMO<br> - <br>Δημητρίου Κρίστια</span></div><img loading="lazy" src="./Assets/Images/BlakvelTeam/053.jpg" alt="alternative"></a>
                         </div>
                         <div class="element-item managers">
-                            <a class="popup-with-move-anim"><div class="element-item-overlay"><span>CFO<br> - <br>Γιάγκου Χρήστος</span></div><img loading="lazy" src="../Assets/Images/BlakvelTeam/26.jpg" alt="alternative"></a>
+                            <a class="popup-with-move-anim"><div class="element-item-overlay"><span>CFO<br> - <br>Γιάγκου Χρήστος</span></div><img loading="lazy" src="./Assets/Images/BlakvelTeam/26.jpg" alt="alternative"></a>
                         </div>
                         <div class="element-item employee">
-                            <a class="popup-with-move-anim"><div class="element-item-overlay"><span>Production Logistics<br> - <br>Πλουτάρχου Έλλη</span></div><img loading="lazy" src="../Assets/Images/BlakvelTeam/046.jpg" alt="alternative"></a>
+                            <a class="popup-with-move-anim"><div class="element-item-overlay"><span>Production Logistics<br> - <br>Πλουτάρχου Έλλη</span></div><img loading="lazy" src="./Assets/Images/BlakvelTeam/046.jpg" alt="alternative"></a>
                         </div>
                         <div class="element-item employee">
-                            <a class="popup-with-move-anim"><div class="element-item-overlay"><span>Marketing Dept<br> - <br>Κίζα Δήμητρα</span></div><img loading="lazy" src="../Assets/Images/BlakvelTeam/003.jpg" alt="alternative"></a>
+                            <a class="popup-with-move-anim"><div class="element-item-overlay"><span>Marketing Dept<br> - <br>Κίζα Δήμητρα</span></div><img loading="lazy" src="./Assets/Images/BlakvelTeam/003.jpg" alt="alternative"></a>
                         </div>
                         <div class="element-item employee">
-                            <a class="popup-with-move-anim"><div class="element-item-overlay"><span>Production Dept<br> - <br>Κυριακίδης Μιχάλης</span></div><img loading="lazy" src="../Assets/Images/BlakvelTeam/032.jpg" alt="alternative"></a>
+                            <a class="popup-with-move-anim"><div class="element-item-overlay"><span>Production Dept<br> - <br>Κυριακίδης Μιχάλης</span></div><img loading="lazy" src="./Assets/Images/BlakvelTeam/032.jpg" alt="alternative"></a>
                         </div>                        
                         <div class="element-item employee">
-                            <a class="popup-with-move-anim"><div class="element-item-overlay"><span>Production Dept<br> - <br>Καράβης Λουκάς</span></div><img loading="lazy" src="../Assets/Images/BlakvelTeam/071.jpg" alt="alternative"></a>
+                            <a class="popup-with-move-anim"><div class="element-item-overlay"><span>Production Dept<br> - <br>Καράβης Λουκάς</span></div><img loading="lazy" src="./Assets/Images/BlakvelTeam/071.jpg" alt="alternative"></a>
                         </div>
                         <div class="element-item employee">
-                            <a class="popup-with-move-anim"><div class="element-item-overlay"><span>IT & Marketing Dept<br> - <br>Κατσούρη Ίριδα</span></div><img loading="lazy" src="../Assets/Images/BlakvelTeam/006.jpg" alt="alternative"></a>
+                            <a class="popup-with-move-anim"><div class="element-item-overlay"><span>IT & Marketing Dept<br> - <br>Κατσούρη Ίριδα</span></div><img loading="lazy" src="./Assets/Images/BlakvelTeam/006.jpg" alt="alternative"></a>
                         </div>
-                    </div> <!-- end of grid -->
-                    <!-- end of filter -->
-                    
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-		</div> <!-- end of container -->
-    </div> <!-- end of filter -->
-    <!-- end of projects -->
-
-
-    <!-- Project Lightboxes -->
-    <!-- Lightbox -->
+                    </div> 
+                </div> 
+            </div> 
+		</div> 
+    </div> 
     <div id="charity_Pasykaf" class="lightbox-basic zoom-anim-dialog mfp-hide">
         <div class="row">
             <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
             <div class="col-lg-8">
-                <img loading="lazy" class="img-fluid" src="../Assets/Images/Charitys/Paskaf_Context.jpg" alt="alternative">
-            </div> <!-- end of col -->
+                <img loading="lazy" class="img-fluid" src="./Assets/Images/Charitys/Paskaf_Context.jpg" alt="alternative">
+            </div> 
             <div class="col-lg-4">
                 <h3>ΠΑΣΥΚΑΦ</h3>
                 <hr class="line-heading">
                 <h6></h6>
                 <p>Από τη λίστα μας δεν θα μπορούσε φυσικά να λείπει ο ΠΑΣΥΚΑΦ, ο οποίος από το έτος ίδρυσης του, το 1986, συμβάλει ποικιλοτρόπως στη βελτίωση της ποιότητας της ζωής των ασθενών με εμπειρία καρκίνου και των οικογενειών τους, προσφέροντας δωρεάν, εξειδικευμένες υποστηρικτικές υπηρεσίες ανακουφιστικής φροντίδας. Ο αξιέπαινος αυτός σύνδεσμος ταυτόχρονα παρέχει στον τομέα της πρόληψης, συστηματική διαφώτιση και στοχευμένη ενημέρωση του κοινού μέσα από προγράμματα, εκστρατείες και συνέργειες με διάφορους φορείς και κρατικές υπηρεσίες.</p>
-                <!-- <p>Blakvel, in the context of its social responsibility, will contribute to the financial support of PASYKAF.</p> -->
                 <div class="testimonial-container">
                     <p class="testimonial-text"></p>
                     <p class="testimonial-author"></p>
                 </div>
                 <a class="btn-solid-reg" href="https://pasykaf.org/">ΙΣΤΟΣΕΛΙΔΑ</a> <a class="btn-outline-reg mfp-close as-button" href="#projects">ΠΙΣΩ</a> 
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
-
-    <!-- Lightbox -->
+            </div> 
+        </div> 
+    </div> 
     <div id="charity_Alkionides" class="lightbox-basic zoom-anim-dialog mfp-hide">
         <div class="row">
             <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
             <div class="col-lg-8">
-                <img loading="lazy" class="img-fluid" src="../Assets/Images/Charitys/alkionides_context.png" alt="alternative">
-            </div> <!-- end of col -->
+                <img loading="lazy" class="img-fluid" src="./Assets/Images/Charitys/alkionides_context.png" alt="alternative">
+            </div> 
             <div class="col-lg-4">
                 <h3>Σωματείο Αλκυονίδες</h3>
                 <hr class="line-heading">
                 <h6></h6>
                 <p>Το φιλανθρωπικό σωματείο Αλκυονίδες είναι μια μη κερδοσκοπική οργάνωση, με θεμελιώδη σκοπό να δώσει «φως» και ελπίδα σε οικογένειες που αντιμετωπίζουν οικονομικές δυσκολίες. Με γνώμονα αυτό, καθημερινά προσφέρουν οικονομική βοήθεια και φαγητό σε άπορες οικογένειες. Ταυτόχρονα, υποστηρίζουν οικονομικά άπορους φοιτητές και παιδιά με ιατρικά προβλήματα που χρειάζονται παραπομπή στο εξωτερικό.</p>
-                <!-- <p>By offering the best professional services and quality products in the market. Don't hesitate and get in touch with us.</p> -->
                 <div class="testimonial-container">
                     <p class="testimonial-text"></p>
                     <p class="testimonial-author"></p>
                 </div>
                 <a class="btn-solid-reg" href="https://www.alkionides.org.cy/index.php?lang=el">ΙΣΤΟΣΕΛΙΔΑ</a> <a class="btn-outline-reg mfp-close as-button" href="#projects">ΠΙΣΩ</a> 
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
-
-    <!-- Lightbox -->
+            </div> 
+        </div> 
+    </div> 
     <div id="charity_AgaliaElpidas" class="lightbox-basic zoom-anim-dialog mfp-hide">
         <div class="row">
             <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
             <div class="col-lg-8">
-                <img loading="lazy" class="img-fluid" src="../Assets/Images/Charitys/agaiaElpida_Context.jpg" alt="alternative">
-            </div> <!-- end of col -->
+                <img loading="lazy" class="img-fluid" src="./Assets/Images/Charitys/agaiaElpida_Context.jpg" alt="alternative">
+            </div> 
             <div class="col-lg-4">
                 <h3>Αγκαλιά Ελπίδας</h3>
                 <hr class="line-heading">
                 <h6></h6>
                 <p>Ο μη κερδοσκοπικός Οργανισμός Αγκαλιά Ελπίδας αποσκοπεί στην πολύπλευρη στήριξη των παιδιών με εγκεφαλική παράλυση και άλλες αναπηρίες και των οικογενειών τους. Ταυτόχρονα, έχει ως στόχο την διαφύλαξη των Δικαιωμάτων τους όπως αυτά απορρέουν από την Σύμβαση των Ηνωμένων Εθνών για άτομα με αναπηρίες την οποία η Κυπριακή Δημοκρατία υπέγραψε το 2011. Στηρίζεται κυρίως στην εθελοντική εργασία και προσφορά των μελών του.</p>
-                <!-- <p>By offering the best professional services and quality products in the market. Don't hesitate and get in touch with us.</p> -->
                 <div class="testimonial-container">
                     <p class="testimonial-text"></p>
                     <p class="testimonial-author"></p>
                 </div>
                 <a class="btn-solid-reg" href="https://www.alkionides.org.cy/index.php?lang=el">ΙΣΤΟΣΕΛΙΔΑ</a> <a class="btn-outline-reg mfp-close as-button" href="#projects">ΠΙΣΩ</a> 
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
-
-    <!-- Lightbox -->
+            </div> 
+        </div> 
+    </div> 
     <div id="charity_ADD-ADHD" class="lightbox-basic zoom-anim-dialog mfp-hide">
         <div class="row">
             <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
             <div class="col-lg-8">
-                <img loading="lazy" class="img-fluid" src="../Assets/Images/Charitys/adhdCyprus_Context.jpg" alt="alternative">
-            </div> <!-- end of col -->
+                <img loading="lazy" class="img-fluid" src="./Assets/Images/Charitys/adhdCyprus_Context.jpg" alt="alternative">
+            </div> 
             <div class="col-lg-4">
                 <h3>ΔΕΠΥ Κύπρου</h3>
                 <hr class="line-heading">
                 <h6></h6>
                 <p>Αυτό το σωματείο έχει ως αποστολή του την βελτίωση της ζωής όσων επηρεάζονται από τη ΔΕΠ-Υ στην Κύπρο προσφέροντας στήριξη, ενημέρωση και εκπαίδευση. Μέσω σειράς σεμιναρίων στοχεύει στην ευαισθητοποίηση των Κύπριων πολιτών όσον αφορά στην κατανόηση και αποδοχή ατόμων που επηρεάζονται από ΔΕΠ-Υ. Ειδικότερα διασφαλίζει ότι τα παιδιά με ΔΕΠ-Υ θα τύχουν έγκαιρης διάγνωσης και εκπαιδευτικής στήριξης μέσω του ΥΠΠΑΝ.</p>
-                <!-- <p>By offering the best professional services and quality products in the market. Don't hesitate and get in touch with us.</p> -->
                 <div class="testimonial-container">
                     <p class="testimonial-text"></p>
                     <p class="testimonial-author"></p>
                 </div>
                 <a class="btn-solid-reg" href="https://add-adhd.org.cy/">ΙΣΤΟΣΕΛΙΔΑ</a> <a class="btn-outline-reg mfp-close as-button" href="#projects">ΠΙΣΩ</a> 
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
-
-    
-
-
-   
-
-    <!-- Copyright -->
+            </div> 
+        </div> 
+    </div> 
     <div class="copyright">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <p class="p-small">Copyright © 2021 <a href="https://vaddims.com" target="_blank">Website by Vaddims</a></p>
-                </div> <!-- end of col -->
-            </div> <!-- enf of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of copyright --> 
-    <!-- end of copyright -->
-    
-    	
-    <!-- Scripts -->
-    <script src="../PrebuildFiles/Js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
-    <script src="../PrebuildFiles/Js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
-    <script src="../PrebuildFiles/Js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-    <script src="../PrebuildFiles/Js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
-    <script src="../PrebuildFiles/Js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
-    <script src="../PrebuildFiles/Js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
-    <script src="../PrebuildFiles/Js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
-    <script src="../PrebuildFiles/Js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
-    <script src="../PrebuildFiles/Js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
-    <script src="../Js/scripts.js"></script> <!-- Custom scripts -->
+                </div> 
+            </div> 
+        </div> 
+    </div>  
+    <script src="vendors/scripts/jquery.min.js"></script> 
+    <script src="vendors/scripts/popper.min.js"></script> 
+    <script src="vendors/scripts/bootstrap.min.js"></script> 
+    <script src="vendors/scripts/jquery.easing.min.js"></script> 
+    <script src="vendors/scripts/swiper.min.js"></script> 
+    <script src="vendors/scripts/jquery.magnific-popup.js"></script> 
+    <script src="vendors/scripts/morphext.min.js"></script> 
+    <script src="vendors/scripts/isotope.pkgd.min.js"></script> 
+    <script src="vendors/scripts/validator.min.js"></script> 
+    <script src="scripts.js"></script> 
 </body>
 </html>

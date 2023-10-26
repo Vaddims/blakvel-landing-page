@@ -32,9 +32,12 @@ class Vector {
 		if (lightMode !== null && lightMode === 'false') toggleColorTheme();
 
 		setInterval(() => {
-			const filter = $('.filters-button-group')
-			var filterValue = $(filter).attr('data-filter');
-			$grid.isotope({ filter: filterValue });
+			$('.filters-button-group a').toArray().forEach((element) => {
+				if (element.classList.contains('is-checked')) {
+					const filter = element.getAttribute('data-filter');
+					$grid.isotope({ filter: filter });
+				}
+			});
 		}, 1000);
 	});
 
@@ -391,74 +394,73 @@ class Vector {
 		$('#intro, #introExtra, #area2, #area1, #projects, #teamMembers, .basic-1, .basic-2, #about, #contact, .accordion, .tabs').toggleClass('darkTheme');
 	}
 
-
-	switch (new Date().getMonth()) {
-		case 11: case 0: case 1:
-			const canvas = $('canvas')[0];
-			if (!canvas) return;
-				const ctx = canvas.getContext('2d');
-				const snowflakeSprite = new Image();
-				snowflakeSprite.src = '../Assets/Images/Season/Winter/Snowflake.png'
-		
+	const month = new Date().getMonth() + 1;
+	if (month >= 10 || month <= 2) {
+		const canvas = $('canvas')[0];
+		if (!canvas) return;
+			const ctx = canvas.getContext('2d');
+			const snowflakeSprite = new Image();
+			snowflakeSprite.src = './Assets/Images/Season/Winter/Snowflake.png'
+	
+		scaleCanvas();
+		window.onresize = () => scaleCanvas(canvas);
+	
+		function scaleCanvas() {
+			const header = document.querySelector('#header');
+			canvas.width = header.clientWidth;
+			canvas.height = header.clientHeight;
+		}
+	
+		let particleSystem = new Array();
+		class Particle {
+			constructor(isInit = false) {
+				this.size = Math.random() * 40;
+				this.x = Math.random() * window.innerWidth * 1.5 - window.innerWidth / 2;
+				this.y = isInit ? Math.random() * window.innerHeight : -this.size;
+				this.velX = Math.random() / 2;
+				this.velY = this.size / 5;
+				this.rotation = Math.random() * Math.PI;
+			}
+		}
+	
+		function createParticles() {
+			particleSystem = [];
+			for (let i = 0; i < 50; i++) particleSystem.push(new Particle(true));
+		};
+	
+		const speed = 0.5;
+		const speedVel = new Vector(1, 0.2);
+	
+		createParticles();
+		(function draw() {
+			ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+			for (let i = 0; i < particleSystem.length; i++) {
+				ctx.beginPath();
+				let entity = particleSystem[i];
+				// ctx.filter = `blur(${Math.floor((40 - entity.size) / 10) * 2}px)`
+				ctx.save();
+				ctx.translate(entity.x, entity.y);
+				ctx.rotate(entity.rotation);
+				ctx.drawImage(snowflakeSprite, 0, 0, entity.size, entity.size);
+				ctx.globalAlpha = 1 / (entity.size / 20 + 0.01);
+				ctx.fillStyle = 'white';
+				ctx.fill();
+				ctx.restore();
+	
+				entity.rotation += 0.01;
+	
+				entity.x += entity.velX * speed * speedVel.x;
+				entity.y += entity.velY * speed * speedVel.y;
+	
+				if (entity.x - entity.size * 2 >= window.innerWidth || entity.y - entity.size * 2 >= window.innerHeight) particleSystem[i] = new Particle();
+			}
+	
+			requestAnimationFrame(draw);
+		})();
+	
+		window.onresize = () => {
 			scaleCanvas();
-			window.onresize = () => scaleCanvas(canvas);
-		
-			function scaleCanvas() {
-				const header = document.querySelector('#header');
-				canvas.width = header.clientWidth;
-				canvas.height = header.clientHeight;
-			}
-		
-			let particleSystem = new Array();
-			class Particle {
-				constructor(isInit = false) {
-					this.size = Math.random() * 40;
-					this.x = Math.random() * window.innerWidth * 1.5 - window.innerWidth / 2;
-					this.y = isInit ? Math.random() * window.innerHeight : -this.size;
-					this.velX = Math.random() / 2;
-					this.velY = this.size / 5;
-					this.rotation = Math.random() * Math.PI;
-				}
-			}
-		
-			function createParticles() {
-				particleSystem = [];
-				for (let i = 0; i < 50; i++) particleSystem.push(new Particle(true));
-			};
-		
-			const speed = 0.5;
-			const speedVel = new Vector(1, 0.2);
-		
 			createParticles();
-			(function draw() {
-				ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
-				for (let i = 0; i < particleSystem.length; i++) {
-					ctx.beginPath();
-					let entity = particleSystem[i];
-					ctx.save();
-					ctx.translate(entity.x, entity.y);
-					ctx.rotate(entity.rotation);
-					ctx.drawImage(snowflakeSprite, 0, 0, entity.size, entity.size);
-					ctx.globalAlpha = 1 / (entity.size / 20 + 0.01);
-					ctx.fillStyle = 'white';
-					ctx.fill();
-					ctx.restore();
-		
-					entity.rotation += 0.01;
-		
-					entity.x += entity.velX * speed * speedVel.x;
-					entity.y += entity.velY * speed * speedVel.y;
-		
-					if (entity.x - entity.size * 2 >= window.innerWidth || entity.y - entity.size * 2 >= window.innerHeight) particleSystem[i] = new Particle();
-				}
-		
-				requestAnimationFrame(draw);
-			})();
-		
-			window.onresize = () => {
-				scaleCanvas();
-				createParticles();
-			}
-			break;
+		}
 	}
 })(jQuery);
